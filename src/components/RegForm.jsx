@@ -23,7 +23,6 @@ function RegForm() {
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                
                 <label htmlFor="name">Name</label>
                 <input type="text" id='name' name='name' onChange={handleChange} value={values.name} onBlur={handleBlur} />
                 {errors.name && touched.name ? <p className='text-red-700 mb-5'>{errors.name}</p> : <div className='mb-5'></div>}
